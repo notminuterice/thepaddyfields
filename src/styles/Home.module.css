@@ -20,9 +20,24 @@
   left: 50%;
   transform: translate(-50%);
   width: 700px;
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "posts posts frog"
+    "posts posts nav"
+    "posts posts nav"
+    "friend friend friend";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
-.header {
+.header{
+  grid-area: head;
+}
+
+.welcomeWrapper {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -62,27 +77,16 @@
   }
 }
 
-.stickers {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.sticker {
-  height: 30px;
-}
-
 .frog {
-  position: absolute;
-  right: 0;
-  margin-top: 10px;
+  grid-area: frog;
+  width: 100%;
 }
 
 .posts {
-  width: 470px;
-  height: 550px;
+  grid-area: posts;
+  width: 100%;
+  height: auto;
   background-color: rgb(255 66 232);
-  margin-top: 10px;
 }
 
 .postTitle{
@@ -92,4 +96,15 @@
   font-family: 'Times New Roman', Times, serif;
   color: #39e6ff;
   font-size: 2rem;
+}
+
+.nav {
+  grid-area: nav;
+  width: auto;
+  height: auto;
+  background-color: red;
+}
+
+.rentafriend {
+  grid-area: friend;
 }

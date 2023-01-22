@@ -1,30 +1,38 @@
 import s from "src/styles/Home.module.css"
+import Stickers from "@/components/Stickers/Stickers"
 
-export default function Home() {
+export default function Home({ stickerPaths }) {
   return (
     <div className={s.background}>
       <div className={s.wrapper}>
         <div className={s.header}>
-          <img src="/statue.png" className={s.statue} />
-          <h1 className={s.welcome}>WELCOMETO<br/>THERICEPADDY</h1>
-          <img src="/statue.png" className={s.statue} />
-        </div>
-        <div className={s.stickers}>
-          <img src="/alienow.png" className={s.sticker} />
-          <img src="/anarchy-now.gif" className={s.sticker} />
-          <img src="/bantimetravel.png" className={s.sticker} />
-          <img src="/chrmevil.gif" className={s.sticker} />
-          <img src="/combatbaby.gif" className={s.sticker} />
-          <img src="/rave.gif" className={s.sticker} />
-          <img src="/threec2002.gif" className={s.sticker} />
-          <img src="/exefile.gif" className={s.sticker} />
+          <div className={s.welcomeWrapper}>
+            <img src="/statue.png" className={s.statue} />
+            <h1 className={s.welcome}>WELCOMETO<br/>THEPADDYFIELDS</h1>
+            <img src="/statue.png" className={s.statue} />
+          </div>
+          <Stickers stickerPaths={stickerPaths} />
         </div>
         <img src="/mantellafrog.png" className={s.frog} />
         <div className={s.posts}>
           <h1 className={s.postTitle}>Posts</h1>
         </div>
+        <div className={s.nav}>
+
+        </div>
         <img src="/rentafriend.png" className={s.rentafriend}/>
       </div>
     </div>
   )
+}
+
+
+export async function getStaticProps(context) {
+  const fs = require("fs")
+  const paths = fs.readdirSync("./public/stickers").map(fileName => `./stickers/${fileName}`)
+  return ({
+    props: {
+      stickerPaths: paths
+    }
+  })
 }
