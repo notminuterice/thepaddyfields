@@ -1,0 +1,55 @@
+.mainWindow{
+  position: relative;
+  background-color: #D3CFC8;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  box-shadow: inset -1px -1px #252525, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  top: 2px;
+  margin-inline: 2px;
+  width: auto;
+  height: 20px;
+  background: linear-gradient(90deg,#0A256B, #A7CAF0);
+}
+
+.titleText {
+  margin-left: 2px;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.button {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  border-radius: 0px;
+  background-color: #D3CFC8;
+  border: none;
+  box-shadow: inset -1px -1px #252525, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  justify-content: center;
+}
+
+.buttonImage {
+  margin: auto;
+}
+
+#minimise {
+  margin-left: 147px;
+  margin-right: 1px;
+}
+
+#close {
+  margin-left: 2px;
+}
+
+#minimiseImage{
+  margin-top: 9px;
+}

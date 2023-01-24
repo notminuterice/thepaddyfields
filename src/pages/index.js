@@ -1,5 +1,6 @@
 import s from "src/styles/Home.module.css"
 import Stickers from "@/components/Stickers/Stickers"
+import WindowBox from "@/components/WindowBox/WindowBox"
 
 export default function Home({ stickerPaths }) {
   return (
@@ -18,8 +19,8 @@ export default function Home({ stickerPaths }) {
           <h1 className={s.postTitle}>Posts</h1>
         </div>
         <div className={s.nav}>
-
-        </div>
+          <WindowBox title={"Nav"}/>
+        </div >
         <img src="/rentafriend.png" className={s.rentafriend}/>
       </div>
     </div>
