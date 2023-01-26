@@ -1,6 +1,7 @@
 import s from "@/components/WindowBox/WindowBox.module.css"
+import XPButton from "../XPButton/XPButton"
 
-export default function WindowBox({title}) {
+export default function WindowBox({title, buttons, content}) {
   return (
     <div className={s.mainWindow}>
       <div className={s.top}>
@@ -14,6 +15,12 @@ export default function WindowBox({title}) {
         <button className={s.button} id={s.close}>
           <img className={s.buttonImage} src="data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E"/>
         </button>
+      </div>
+      <div className={s.textWrapper}>
+        <h2 className={s.mainText} >
+          {content}
+        </h2>
+        {buttons}
       </div>
     </div>
   )

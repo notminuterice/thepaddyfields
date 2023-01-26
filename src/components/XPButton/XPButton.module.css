@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  height: auto;
+  width: auto;
+  border-radius: 0px;
+  background-color: #D3CFC8;
+  border: none;
+  box-shadow: inset -1px -1px #252525, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  justify-content: center;
+}
+
+.text {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  color: black;
+  font-size: 0.8rem;
+}
