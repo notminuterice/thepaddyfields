@@ -1,0 +1,11 @@
+.buttonGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 5);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.buttonWrapper{
+  width: 100%;
+}

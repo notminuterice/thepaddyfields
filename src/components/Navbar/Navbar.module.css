@@ -1,0 +1,29 @@
+.nav {
+  grid-area: nav;
+  width: auto;
+}
+
+.textWrapper{
+  column-gap: 5px;
+  row-gap: 5px;
+  background-color: white;
+  width: auto;
+  height: 430px;
+  margin: 15px 5px 15px 5px;
+  padding: 5px;
+}
+
+.windowText {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-size: 0.75rem;
+  color: black;
+  white-space: pre-line;
+}
+
+.navButtonWrapper{
+  width: auto;
+}
+
+.gif{
+  width: 100%;
+}

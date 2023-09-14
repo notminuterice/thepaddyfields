@@ -54,18 +54,5 @@
   margin-top: 9px;
 }
 
-.textWrapper{
-  background-color: white;
-  width: auto;
-  height: auto;
-  margin: 15px 5px 15px 5px;
-  padding: 5px;
-}
-
-.mainText{
-  font-family: "Pixelated MS Sans Serif", Arial;
-  font-size: 0.75rem;
-  color: black;
-  white-space: pre-line;
-
+.contentWrapper {
 }

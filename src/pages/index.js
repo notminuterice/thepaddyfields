@@ -1,7 +1,6 @@
 import s from "src/styles/Home.module.css"
 import Stickers from "@/components/Stickers/Stickers"
-import WindowBox from "@/components/WindowBox/WindowBox"
-import XPButton from "@/components/XPButton/XPButton"
+import Navbar from "@/components/Navbar/Navbar"
 
 export default function Home({ stickerPaths }) {
   return (
@@ -19,22 +18,8 @@ export default function Home({ stickerPaths }) {
         <div className={s.posts}>
           <h1 className={s.postTitle}>Posts</h1>
         </div>
-        <div className={s.nav}>
-          <WindowBox
-            title={"Nav"}
-            buttons={[
-              <XPButton text={"Posts"} />,
-              <XPButton text={"Cool links"} />
-            ]}
-            content="
-              ---------------------------------------------------
-              This is the navbar, here you can navigate to anywhere
-              on the site by pressing the buttons below
-              \n---------------------------------------------------
-            "
-          />
-        </div >
-        <img src="/rentafriend.png" className={s.rentafriend}/>
+        <img src="/rentafriend.png" className={s.rentafriend} />
+        <Navbar />
       </div>
     </div>
   )
